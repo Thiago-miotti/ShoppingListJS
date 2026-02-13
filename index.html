@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Quicklist</title>
+  </head>
+  <body>
+    <section id="Header-container">
+      <img src="./assets/Logo.png" alt="Logo" />
+      <h1 id="Header-title">quicklist</h1>
+    </section>
+
+    <section id="Content-container">
+      <a id="Go-back-btn">
+        <img src="./assets/move-left.svg" alt="Arrow-left" />
+        <p>Voltar</p>
+      </a>
+      <h2 id="Content-title">Compras da semana</h2>
+
+      <form id="Add-item-form">
+        <input
+          id="Add-item-input"
+          type="text"
+          placeholder="Adicione um novo item"
+        />
+        <button class="Add-item-btn" type="submit">Adicionar item</button>
+      </form>
+
+      <ul id="Items-list-container"></ul>
+    </section>
+
+    <div id="Delete-toast" class="Show-toast">
+      <span id="Delete-toast-text">
+        <img src="./assets/warning-circle-filled.png" alt="Warning circle" />
+        <p>O item foi removido da lista</p>
+      </span>
+      <img src="./assets/delete-small.png" alt="Delete icon" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

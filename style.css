@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f5fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Header-container {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+  margin-bottom: 62px;
+}
+
+#Header-title {
+  font-family: "Sora", sans-serif;
+  color: #374151;
+}
+
+#Content-container {
+  width: 700px;
+  height: auto;
+}
+
+#Go-back-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  color: #ca3884;
+  font-family: "Roboto condensed", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: medium;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+#Go-back-btn:hover {
+  text-decoration: underline;
+}
+
+#Content-title {
+  font-family: "Roboto condensed", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #080b12;
+  margin-bottom: 44px;
+}
+
+#Add-item-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+#Add-item-input {
+  width: 100%;
+}
+
+.Add-item-btn {
+  font-family: "Roboto condensed", sans-serif;
+  background-color: #ca3884;
+  color: #fff;
+  width: 160px;
+  height: 44px;
+  border: 1px solid #ca3884;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px;
+  font-weight: medium;
+}
+
+.Add-item-btn:hover {
+  background-color: #c582a5;
+  border: 1px solid #c582a5;
+  cursor: pointer;
+}
+
+#Add-item-input {
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  padding: 0 18px;
+}
+
+#Add-item-input:hover {
+  border-color: #b9c2d0;
+}
+
+#Add-item-input:focus {
+  outline: none;
+  border: 2px solid #ca3884;
+}
+
+#Add-item-input:placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  line-height: 140%;
+  color: #9ca3af;
+}
+
+#Items-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style-type: none;
+  margin-bottom: 36px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background-color: white;
+  padding: 8px 12px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: medium;
+  font-family:
+    "Roboto Condensed",
+    sans serif;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
+#Items-list-item-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+#Items-list-delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+#Items-list-delete-btn:hover {
+  cursor: pointer;
+  border: 1px solid #b9c2d0;
+  border-radius: 12px;
+  background-color: #e7e7e786;
+}
+
+[type="checkbox"] {
+  border-color: #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  color: #ca3884;
+}
+
+#Delete-toast {
+  padding: 12px;
+  background-color: #c93847;
+  color: white;
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #c93847;
+  border-radius: 12px;
+  opacity: 0;
+}
+
+#Delete-toast-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: medium;
+  font-family:
+    "Roboto Condensed",
+    sans serif;
+}
