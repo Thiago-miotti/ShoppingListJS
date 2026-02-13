@@ -1,6 +1,7 @@
 let counter = 0;
 const form = document.querySelector("#Add-item-form");
 const list = document.getElementById("Items-list-container");
+const deleteToast = document.getElementById("Delete-toast");
 
 form.onsubmit = (e) => {
   const input = document.getElementById("Add-item-input").value;
@@ -36,8 +37,17 @@ function addItemToTheList(itemName) {
 list.addEventListener("click", (e) => {
   if (e.target.classList.contains("delete-btn")) {
     const li = e.target.closest("li");
+    deleteToast.style.opacity = 100;
     return li.remove();
+  } else {
+    deleteToast.style.opacity = 0;
   }
 
   return console.log(e.target);
 });
+
+deleteToast.addEventListener("click", (e) => {
+  if(e.target.classList.contains("Remove-toast-button")){
+    deleteToast.style.opacity = 0;
+  }
+})

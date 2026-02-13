@@ -198,3 +198,7 @@ li {
     "Roboto Condensed",
     sans serif;
 }
+
+.Remove-toast-button {
+  cursor: pointer;
+}

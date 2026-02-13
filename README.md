@@ -8,16 +8,12 @@ Exercício de **lista de compras** em JavaScript vanilla (HTML, CSS e JS), feito
 
 ## Demonstração
 
-Coloque um GIF de demonstração (gravação de tela do app) em `assets/demo.gif` para exibir abaixo:
-
 ![Demonstração do Quicklist](assets/demo.gif)
 
 ## Funcionalidades
 
 - **Adicionar item:** digite no campo e clique em "Adicionar item" (ou envie o formulário).
 - **Remover item:** clique no ícone de lixeira ao lado do item.
-- **Checkbox:** cada item possui um checkbox (estado visual).
-- **Toast de exclusão:** mensagem "O item foi removido da lista" (elemento presente no HTML/CSS).
 
 ## Tecnologias
 
@@ -49,7 +45,3 @@ Lista-compras-js/
 │   └── demo.gif    # GIF de demonstração (adicione aqui)
 └── README.md
 ```
-
-## Licença
-
-Uso livre para fins de estudo.
